@@ -1,74 +1,76 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="nojs">
-<head>
-  <title>The future of gaming</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" />
-  <link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form_reset.css" />
-  <link rel="stylesheet" media="screen" href="css/screen.css" />
-</head>
-<body>
-  <div class="container">
-    <div class="navbar">
-      <img src="images/logo.png" class="logo"
-      <nav>
-        <ul id="menuList">
-            <li><a href="">game</a></li>
-            <li><a href="">game</a></li>
-            <li><a href="">game</a></li>
-            <li><a href="">game</a></li>
-        </ul>
-      </nav>
-      <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
-    </div>
+  <head>
+    <title>Gaming Alpha and beta </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" />
+    <link rel="stylesheet" media="screen" href="css/meyers_and_normalize-form_reset.css" />
+    <link rel="stylesheet" media="screen" href="css/screen.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="images/logo.png" class="logo" />
+        <nav>
+          <ul id="menuList">
+            <li><a href="index.html">Home screen</a></li>
+          </ul>
+        </nav>
+        <img src="images/menu.png" class="menu-icon" />
 
-    <div class="row">
-      <div class="col-1">
-        <h2>PS4 vs<br>dualshock 4</h2>
-        <h3>wireless controller for playstation 4</h3>
-        <p>(compatible/generic)</p>
-        <h4> $32.50</h4>
-        <button type="button">but now<img src="images/arrow.png"></button>
+        <img src="images/menu.png" class="menu-icon" onclick="togglemenu()" />
       </div>
-      <div class="col-2">
-        <img src="images/controller.png" class="controller">
-        <div class="color-box"></div>
-        <div class="add-btn">
-          <img src="images/add.png">
-          <p><small>add to Cart</small></p>
+
+      <div class="row">
+        <div class="col-1">
+          <h2>
+            PS4 vs<br />
+            dualshock 4
+          </h2>
+          <h3><form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="phone">phone number:</label><br>
+            <input type="tel" id="phone" name="phone"><br>
+
+          </form>
+        </h3>
+          <p>(compatible/generic)</p>
+          <h4></h4>
+          <button type="button">subscribe<img src="images/arrow.png" /></button>
+        </div>
+        <div class="col-2">
+          <img src="images/controller.png" class="controller" />
+          <div class="color-box"></div>
+          <div class="add-btn">
+            <img src="images/logo.png" />
+            <p><small>Do you have what it takes to win?</small></p>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="social-links">
-      <img src="images/fb.png">
-      <img src="images/tb.png">
-      <img src="images/ig.png">
+      <div class="social-links">
+        <img src="images/fb.png" />
+        <img src="images/tb.png" />
+        <img src="images/ig.png" />
+      </div>
     </div>
+    <script>
 
-  </div>
-<main id="content">
-  <form method="get" action="#null">
-    <h1>Secret Diabetes Newsletter</h1>
-    <p>
-      Sign up and learn 5 secrets to fight Diabetes!
-    </p>
-    <ol>
-      <li id="input-email">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" pattern="^.+@.+$" />
-      </li>
-      <li id="input-age-verification">
-        <input type="checkbox" id="age-verification" name="age-verification" value="18" />
-        <label for="age-verification">I am over 18 years old</label>
-      </li>
-      <li id="input-submit">
-        <input type="submit" name="submit" id="submit" value="Subscribe" />
-      </li>
-    </ol>
-  </form>
-</main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/site.js"></script>
-</body>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+      function togglemenu()
+        if(menuList.style.maxHeight == "0px")
+        {
+          menuList.style.maxHeight = "130px";
+        }
+
+        else
+        {
+          menuList.style.maxHeight = "0px";
+        }
+    </script>
+  </body>
 </html>
