@@ -1,16 +1,27 @@
+/** creat font family */
 *{
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-  
+/**button animation */
   input {
     box-sizing: border-box;
     width:97%;
     padding: 12px 20px;
     margin: 8px 1.5%;
     border-radius: 6px;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #85f1fa;
+    background-color: #f1f1f1;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
   }
   
 .container{
@@ -21,6 +32,7 @@
     box-sizing: border-box;
     overflow:hidden;
 }
+
 .navbar{
     width: 100%;
     display: flex;
@@ -96,6 +108,7 @@ button{
     border-radius: 6px;
     cursor: pointer;
 }
+/** */
 button img{
     width: 30px;
     display: none;
@@ -157,7 +170,7 @@ button:hover{
     text-align: center;
 }
 
-
+/**media screen for phones */
 @media only screen and (max-width:700px){
 
     nav ul{
