@@ -4,18 +4,13 @@ jQuery(function($) {
   $('html').addClass('hasjs');
 });
 
-const button =
-document.querySelector ('.button');
-const submit =
-document.querySelector ('.submit');
+const colorBox = document.getElementById('color-box');
 
-function toggleClass() {
-  this.classList.toogle('active');
+function changeColor() {
+  const colors = ['red', 'green', 'blue'];
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  const randomColor = colors[randomIndex];
+  colorBox.style.backgroundColor = randomColor;
 }
 
-function addClass() {
-  this.class.add('finished');
-}
-button.addEventListener('click', toggleClass);
-button.addEventListener('transitionend', toggleClass);
-button.addEventListener('transitionend', addClass);
+setInterval(changeColor, 10000);
