@@ -1,4 +1,10 @@
 /** creat font family */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -219,7 +225,7 @@ button:hover{
     .col-1 h3{
         font-size: 13px;
     }
-    
+
 /* Styles for screens with a minimum width of 600 pixels */
 @media screen and (min-width: 600px) {
     body {
